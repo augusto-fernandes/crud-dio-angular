@@ -9,6 +9,7 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
