@@ -14,18 +14,23 @@ export class UserService {
     })
   }
 
-  constructor(private httpCLient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   //C.R.U.D - CREATE, READ, UPDATE, DELETE
   //retorna a lista de usuarios READ
 
   getUsers(): Observable <User[]>{
-    return this.httpCLient.get<User[]>(this.apiUrl);
+    return this.httpClient.get<User[]>(this.apiUrl);
 
   }
 
   //salva o Usuario no banco
   postUser(user : User): Observable<User>{
-    return this.httpCLient.post<User>(this.apiUrl,user, this.httpOptions)
+    return this.httpClient.post<User>(this.apiUrl,user, this.httpOptions)
+  }
+
+  //exclui o usuario do banco DELETE
+  deleteUser(id:number): Observable<User>{
+    return this.httpClient.delete<User>(`${this.apiUrl}/id/${id}`)
   }
 }
