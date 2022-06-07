@@ -78,8 +78,4 @@ export class UserFormComponent implements OnInit {
       this.createUser
     }
   }
-
-  cancel(){
-    this.router.navigate(['/']);
-  }
 }
