@@ -29,4 +29,9 @@ export class TodoListComponent implements OnInit {
     console.log(this.todos);
   }
 
+    removeTodo(todo: any){
+      console.log('O ELEMENTO PAI RECEBEU', todo);
+      let index = this.todos.indexOf(todo);
+      this.todos.splice(index, 1);
+    }
 }
