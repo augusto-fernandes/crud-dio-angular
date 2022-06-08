@@ -7,7 +7,7 @@
     <mat-card-content class="form-field">
         <mat-form-field>
           <mat-label>Tarefa:</mat-label>
-          <input type="text" matInput placeholder="Digite a sua tarefa">
+          <input type="text" #todo matInput placeholder="Digite a sua tarefa"(keyup.enter)="addTodo(todo.value); todo.value='' ">
         </mat-form-field>
       </mat-card-content>
   </mat-card>
