@@ -18,6 +18,7 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
     UserFormComponent,
     TodoListComponent,
     TodoItemComponent,
+    DataBindingComponent,
   ],
   imports: [
     BrowserModule,
