@@ -19,6 +19,7 @@ import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DataBindingComponent } from './pages/data-binding/data-binding.componen
     TodoListComponent,
     TodoItemComponent,
     DataBindingComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
