@@ -10,6 +10,8 @@ export class DataBindingComponent implements OnInit {
   text = 'augusto fernandes'
   imageUrl = 'https://picsum.photos/300/300'
   imageDesc = 'essa é uma imagem'
+  buttonText = 'clique aqui'
+  textRed = 'true';
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +19,10 @@ export class DataBindingComponent implements OnInit {
 
   retornaNome(){
     return this.text
+  }
+
+  clicou(value: any){
+    console.log('clicou aqui',value);
+
   }
 }
