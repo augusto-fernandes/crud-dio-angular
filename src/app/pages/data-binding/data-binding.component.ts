@@ -15,6 +15,7 @@ export class DataBindingComponent implements OnInit {
   bgColor = 'green';
   fontSize = '20px'
   widthImg = 600;
+  textInput= '';
 
   constructor() { }
 

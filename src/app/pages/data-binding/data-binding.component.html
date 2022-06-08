@@ -5,5 +5,8 @@
 <button [attr.aria-label]="buttonText" [style.backgroundColor] ="bgColor" >{{buttonText}} </button>
 
 <input #input (keyup) ="clicou(input.value)">
-
 {{input.value}}
+
+<input type="text" class="form-control"[(ngModel)]="textInput">
+
+<p class="text-default">{{textInput}}</p>
