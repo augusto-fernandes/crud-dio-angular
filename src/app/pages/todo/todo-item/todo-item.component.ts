@@ -7,17 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit {
-  @Input() todo: Todo;
+  @Input() todo: Todo ={
+    id:0,
+    title: '',
+    done: false,
+  };
+  done = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   removeTodo(): void{
-    console.log(this.todo)
   }
 
   markAsDone():void{
-    console.log(this.todo)
+    this.done = true
+
   }
 }

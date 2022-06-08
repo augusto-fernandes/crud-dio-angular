@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-
   todos: Array<Todo> =[];
+  todo: Todo ={
+    id: 0,
+    title:'',
+    done:false,
+  }
   constructor() { }
 
   ngOnInit(): void {
@@ -16,8 +20,12 @@ export class TodoListComponent implements OnInit {
   }
 
   addTodo(title: string){
-    const id =  this.todos.length +1;
-    this.todos.push(new Todo(id, title, false));
+   const id = this.todos.length +1;
+   this.todos.push({
+     id: id,
+     title: title,
+     done:false
+   });
     console.log(this.todos);
   }
 
