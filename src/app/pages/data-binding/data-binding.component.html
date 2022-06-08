@@ -1,8 +1,8 @@
-<h1 [class.text-red] ="textRed">O nome é {{ retornaNome() }}</h1>
+<h1 [class.text-red] ="textRed" [style.font-size]="fontSize"  >O nome é {{ retornaNome() }}</h1>
 
-<img [src]="imageUrl" [alt]="imageDesc">
+<img [src]="imageUrl" [alt]="imageDesc" [style.width.px] ="widthImg">
 
-<button [attr.aria-label]="buttonText">{{buttonText}} </button>
+<button [attr.aria-label]="buttonText" [style.backgroundColor] ="bgColor" >{{buttonText}} </button>
 
 <input #input (keyup) ="clicou(input.value)">
 

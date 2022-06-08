@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  text = 'augusto fernandes'
-  imageUrl = 'https://picsum.photos/300/300'
-  imageDesc = 'essa é uma imagem'
-  buttonText = 'clique aqui'
+  text = 'augusto fernandes';
+  imageUrl = 'https://picsum.photos/300/300';
+  imageDesc = 'essa é uma imagem';
+  buttonText = 'clique aqui';
   textRed = 'true';
+  bgColor = 'green';
+  fontSize = '20px'
+  widthImg = 600;
+
   constructor() { }
 
   ngOnInit(): void {
