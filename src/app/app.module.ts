@@ -21,6 +21,7 @@ import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
+import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { LifeCycleComponent } from './components/life-cycle/life-cycle.component
     DataBindingComponent,
     ButtonComponent,
     LifeCycleComponent,
+    PipesExampleComponent,
   ],
   imports: [
     BrowserModule,
