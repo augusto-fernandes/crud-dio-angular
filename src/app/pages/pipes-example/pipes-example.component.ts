@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PipesExampleComponent implements OnInit {
   number = 0;
   text ='HelLo WorLd!';
-
+  date = Date();
   constructor( private upperCasePipe: UpperCasePipe) { }
 
   ngOnInit(): void {

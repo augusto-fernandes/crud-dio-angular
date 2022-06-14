@@ -17,5 +17,16 @@
   <p>resultado em porcentagem:</p>
   <p>{{ number |percent }}</p>
 
+
+  <p>Data de hoje:</p>
+  <p> {{ date }}</p>
+
+  <p>com pipe</p>
+  <p> {{ date | date }}</p>
+
+  <p> {{ date | date: 'full' }}</p>
+
+  <p> {{ date | date: 'shortTime' }}</p>
+
   <p>{{ text | lowercase}} </p>
 </div>
