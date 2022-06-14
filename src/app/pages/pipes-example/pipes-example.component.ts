@@ -10,6 +10,11 @@ export class PipesExampleComponent implements OnInit {
   number = 0;
   text ='HelLo WorLd!';
   date = Date();
+  pessoa = {
+    nome:'Augusto',
+    idade: '20',
+    profissao: 'desenvolvedor'
+  }
   constructor( private upperCasePipe: UpperCasePipe) { }
 
   ngOnInit(): void {
