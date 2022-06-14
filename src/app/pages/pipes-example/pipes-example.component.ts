@@ -15,7 +15,7 @@ export class PipesExampleComponent implements OnInit {
     idade: '20',
     profissao: 'desenvolvedor'
   };
-  nomes = ['Augusto', 'ana', 'maria']
+  nomes = [ ]
   constructor( private upperCasePipe: UpperCasePipe) { }
 
   ngOnInit(): void {
