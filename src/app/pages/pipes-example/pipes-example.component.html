@@ -3,7 +3,7 @@
   <label for="number">Number</label>
   <input type="text" [(ngModel)]="number" class="form-control" id ="number">
   <p>{{ number }} </p>
-  <button class="btn btn-success" (click)="mudaValor()"></button>
+  <button class="btn btn-success" (click)="mudaValor()">click</button>
 </div>
 
 <div class="">
@@ -33,5 +33,21 @@
 
   <p> {{pessoa | json}} </p>
 
+</div>
 
+<div class="container">
+  <div class="col ">
+    <div class="row-6">
+      <div class="form-group">
+        <label for="text">Print Pipe Test:</label>
+        <input type="text" name="text" id="text" #nome>
+        <button class="btn btn-primary" (click) = "add(nome.value)"> add</button>
+      </div>
+    </div>
+    <div class="row-6">
+      <h3>Lista Formatada</h3>
+      <p>Tamanho da lista {{ nomes.length }}</p>
+      <p>{{ nomes | printList }} </p>
+    </div>
+  </div>
 </div>
