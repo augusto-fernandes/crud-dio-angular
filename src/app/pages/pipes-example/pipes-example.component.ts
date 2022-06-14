@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipesExampleComponent implements OnInit {
   number = 0;
-  text ='Hello World!';
+  text ='HelLo WorLd!';
 
   constructor( private upperCasePipe: UpperCasePipe) { }
 

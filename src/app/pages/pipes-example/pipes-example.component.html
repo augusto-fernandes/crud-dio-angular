@@ -11,5 +11,11 @@
   <p>Resultado com formatacao:</p>
   <p>{{ number | number:'2.0-1'}}</p>
 
-  <p>{{ text }} </p>
+  <p>resultado em moeda:</p>
+  <p>{{ number | currency: 'BRL' }}</p>
+
+  <p>resultado em porcentagem:</p>
+  <p>{{ number |percent }}</p>
+
+  <p>{{ text | lowercase}} </p>
 </div>
