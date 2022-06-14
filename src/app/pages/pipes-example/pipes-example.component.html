@@ -2,6 +2,8 @@
 <div class="form-group">
   <label for="number">Number</label>
   <input type="text" [(ngModel)]="number" class="form-control" id ="number">
+  <p>{{ number }} </p>
+  <button class="btn btn-success" (click)="mudaValor()"></button>
 </div>
 
 <div class="">
@@ -27,5 +29,9 @@
   <p>DATA FORMATADA {{ date | date: 'dd/MM/yyyy' }}</p>
   <p> {{ date | date: 'full' | uppercase }}</p>
 
+  <p> {{text| uppercase}}</p>
+
   <p> {{pessoa | json}} </p>
+
+
 </div>
