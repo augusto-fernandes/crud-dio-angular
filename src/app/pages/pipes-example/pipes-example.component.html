@@ -1,10 +1,15 @@
 
 <div class="form-group">
-  <label for="numver">Number</label>
-  <input type="text" class="form-control" id ="number">
+  <label for="number">Number</label>
+  <input type="text" [(ngModel)]="number" class="form-control" id ="number">
 </div>
 
 <div class="">
-  <p>{{ number}}</p>
+  <p>sem formatacao:</p>
+  <p>{{ number | number}}</p>
+
+  <p>Resultado com formatacao:</p>
+  <p>{{ number | number:'2.0-1'}}</p>
+
   <p>{{ text }} </p>
 </div>
